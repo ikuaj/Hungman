@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-public class HangMan3 {
+private class Hungman {
     public static char[] star;
         public static void main (String args[])
         {   
