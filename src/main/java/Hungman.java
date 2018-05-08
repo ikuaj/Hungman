@@ -1,6 +1,7 @@
 
 
 import java.io.*;
+import java.util.IllegalFormatConversionException;
 import java.util.Random;
 
 public class Hungman {
@@ -39,15 +40,22 @@ public class Hungman {
         score = 0;
         char[] country = new char[lengthOfWord];
         for(int i=0;i<lengthOfWord;i++){
-            country[i] = '*'; 
+            country[i] = '*'; //fills array with asterisks
         }
-        String correct = new String(country);
+        String correct = new String(country); // Converts array to string
         StringBuilder output = new StringBuilder(correct);
-        for(int e=0;e<9;e++){
+        for(int e=0;e<9;e++){ // For eveery 9 attempts
             System.out.println("Please guess a letter in the word: ");
-            String guessedLetter = myConsole.readLine();
-            char firstLetter = guessedLetter.charAt(0);
+            String guessedLetter = myConsole.readLine(); // Gets user input
+            char firstLetter = guessedLetter.charAt(0); // Picks first character
             System.out.println("Letter selected: " + firstLetter);
+            for(int a=0;a<lengthOfWord;a++){
+                if(firstLetter == word[a]){
+                    output.setCharAt(a, firstLetter);
+                    System.out.println(output + "\r\n");
+                }
+
+            }
         }
 
     }
