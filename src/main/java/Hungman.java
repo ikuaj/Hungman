@@ -27,7 +27,7 @@ public class Hungman {
         String[] country = { "pakistan", "india", "germany", "america", "russia", "iran", "iraq", "japan", "sudan", "canada"};
             int x = r.nextInt(country.length);
             String countrySelected = country[x];
-            word = countrySelected.toCharArray();
+            word = countrySelected.toCharArray(); // converts word into character
             System.out.println("A random country has been selected. Guess the country:");
     }
 
@@ -53,7 +53,7 @@ public class Hungman {
             System.out.println("Letter selected: " + firstLetter + "\r\n You have " + guesses + " left!");
             for(int a=0;a<lengthOfWord;a++){
                 if(firstLetter == word[a]){
-                    output.setCharAt(a, firstLetter);
+                    output.setCharAt(a, firstLetter); // changes the asterisks into letter
                     System.out.println(output + "\r\n");
                     score++;
                 }
