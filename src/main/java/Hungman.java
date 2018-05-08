@@ -39,7 +39,7 @@ public class Hungman {
         guessesMade = 0;
         int lengthOfWord = word.length;
         score = 0;
-        guesses = 9;
+        guesses = 8;
         char[] country = new char[lengthOfWord];
         for(int i=0;i<lengthOfWord;i++){
             country[i] = '*'; //fills array with asterisks
@@ -50,7 +50,7 @@ public class Hungman {
             System.out.println("Please guess a letter in the word: ");
             String guessedLetter = myConsole.readLine(); // Gets user input
             char firstLetter = guessedLetter.charAt(0); // Picks first character
-            System.out.println("Letter selected: " + firstLetter + "\r\n You have " + guesses + "left!");
+            System.out.println("Letter selected: " + firstLetter + "\r\n You have " + guesses + " left!");
             for(int a=0;a<lengthOfWord;a++){
                 if(firstLetter == word[a]){
                     output.setCharAt(a, firstLetter);
