@@ -2,9 +2,7 @@ Hangman App
 This repository is for the Hangman Application.
 
 Getting Started
-A small Java Application emulating the infamous kid's game, Hangman. Clone it, run it and start guessing Kenyan Counties. It's accompanied by a couple of unit tests to check that the main application works as expected. The results of these tests are saved to a JUnit XML report.
-
-image
+A small Java Application emulating the infamous kid's game, Hangman. Clone it, run it and start guessing Counties.
 
 Prerequisites
 Basic Git knowledge, including an installed version of Git.
