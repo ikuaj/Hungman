@@ -2,15 +2,15 @@ import org.junit.*;
 import static org.junit.Assert.*;
 import java.util.*;
 
-public class SelectCountyTest {
+public class SelectCountryTest {
 
     @Test
    	public void select_checkIfSelectedWordIsInArray_true() {
-   		SelectCounty wordSelect = new SelectCounty();
+   		SelectCountry wordSelect = new SelectCountry();
    		wordSelect.select();
-   		String selectedCounty = wordSelect.getCounty();
-   		String[] county = {"nyamira", "bungoma", "kakamega", "nyandarua", "marsabit", "mandera", "garissa", "kilifi", "kwale", "mombasa", "migori", "kiambu", "siaya", "kajiado", "kericho", "laikipia", "samburu", "kirinyaga", "lamu", "isiolo"};  
+   		String selectedCountry = wordSelect.getCountry();
+   		String[] country = { "pakistan", "india", "germany", "america", "russia", "iran", "iraq", "japan", "sudan", "canada"};
    		Set<String> set = new HashSet<String>(Arrays.asList(county));
-   		assertEquals(true, set.contains(selectedCounty));
+   		assertEquals(true, set.contains(selectedCountry));
    	}
 }
